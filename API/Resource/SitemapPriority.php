@@ -29,9 +29,10 @@ class SitemapPriority implements ResourceAddonInterface
         return $this->value;
     }
 
-    public function setValue(float $value): SitemapPriority
+    public function setValue(float $value): self
     {
         $this->value = $value;
+
         return $this;
     }
 
@@ -101,5 +102,4 @@ class SitemapPriority implements ResourceAddonInterface
     {
         return strtolower((new \ReflectionClass(static::getResourceParent()))->getShortName());
     }
-
 }
