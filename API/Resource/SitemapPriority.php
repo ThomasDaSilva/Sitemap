@@ -21,7 +21,7 @@ class SitemapPriority implements ResourceAddonInterface
 {
     use ResourceAddonTrait;
 
-    #[Groups([ProductResource::GROUP_ADMIN_READ, ProductResource::GROUP_ADMIN_WRITE, ProductResource::GROUP_FRONT_READ_SINGLE])]
+    #[Groups([ProductResource::GROUP_ADMIN_READ, ProductResource::GROUP_ADMIN_WRITE])]
     protected float $value;
 
     public function getValue(): float
